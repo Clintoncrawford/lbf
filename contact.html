@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Let's Be Friends - Contact</title>
+    <meta name="description" content="">
+	<meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="splide/splide.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/eca2hkj.css">
+
+    <!-- Favicon
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- imagesLoaded // used for portfolio -->
+    <script src="js/imagesloaded.pkgd.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="projects header-wrapper">
+        <div class="navigation">
+            <div class="logo">
+                <a id="lbflogo" href="index.html"><img class="logoLbf" src="images/lbf-text-logo-black.svg" alt="Let's Be Friends"></a>
+                <a id="lbfIcon" href="#"><img class="IconLbf" src="images/lbf-icon.svg" alt="Let's Be Friends"></a>
+            </div>
+            <ul id="myID" class="main-menu">
+                <li><a href="info.html">info</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+            <span id="burger" onclick="openNav()">
+                <label class="hamburger-icon">
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                </label>
+            </span>
+        </div>
+    </div>
+
+    
+    <!--Overlay Menu-->
+    <div id="myNav" class="overlay">
+        <div class="overlay-head">
+            <div class="overlay-logo">
+                <a href="index.html"><img src="images/lbf-icon-white.svg" alt="Let's Be Friends"></a>
+            </div>
+            <div class="closebtn-container">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+            </div>
+        </div>
+        <div class="overlay-content">
+            <a href="info.html">info</a>
+            <a href="projects.html">projects</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="overlay-footer">
+            <div class="email-link">
+                <a href="mailto:philip@letsbefriends.co.za">philip@letsbefriends.co.za</a>
+            </div>
+            <div class="social-link">
+                <a href="#">instagram</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Contact Section -->
+    <div class="contact-section-wrapper">
+        <div class="contact-section-container">
+            <div class="contact-section-header">
+                <h2>Let's Talk</h2>
+            </div>
+            <div class="contact-section-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis ultrices lectus, quis iaculis nunc. Etiam commodo mauris libero, sit amet consequat ipsum accumsan finibus.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-details-wrapper">
+        <div class="contact-1-container">
+            <div class="column-1">
+                <p>Studio contact</p>
+                <p><a href="mailto:philip@letsbefriends.co.za">philip@letsbefriends.co.za</a></p>
+                <p>+27 84 555 7445</p>
+            </div>
+            <div class="column-2">
+                <p>99 Jip De Jager Dr,<br>
+                De Bron, Cape Town, <br>
+                7530, South Africa</p>
+            </div>
+        </div>
+        <div class="column-3">
+            <div id="map"></div>
+        </div>
+    </div>
+
+     <!-- Footer Section -->
+     <div class="footer-wrapper footer-contact">
+        <div class="copyright">
+            <p>&copy;<script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script>
+            Let's Be Friends. All Rights Reserved</p>
+        </div>
+        <div class="footer-container-social info-social">
+            <a href="https://www.behance.net/letsbefriends"><img src="images/behance.svg" alt="Let's Be Friends Behance"></a>
+            <a href="https://instagram.com/lbf_studio"><img src="images/instagram.svg" alt="Let's Be Friends Instagram"></a>
+            <a href=" https://vimeo.com/letsbefriends"><img src="images/vimeo.svg" alt="Let's Be Friends Vimeo"></a>
+        </div>
+    </div>
+    
+
+<!-- Custom script -->
+<script src="splide/splide.min.js"></script>
+
+<script>
+
+// Overlay Menu
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+
+// Header Navigation
+// Hide/show menu
+myID = document.getElementById("myID");
+//(y >= 600)
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 100) {
+        myID.className = "main-menu hide"
+    } else {
+        myID.className = "main-menu show"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+// End Hide/show menu
+
+// Show/hide toggle menu
+burgerM = document.getElementById("burger");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 100) {
+        burgerM.className = "main-menu showBurger"
+    } else {
+        burgerM.className = "main-menu hide"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+// End Show/hide toggle menu
+
+// Hide/show LBF logo
+lbfLogo = document.getElementById("lbflogo");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 100) {
+        lbfLogo.className = "logoLbf hideLbfLogo"
+    } else {
+        lbfLogo.className = "logoLbf showLbfLogo"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+// End Hide/show LBF logo
+
+// Show/hide LBF icon
+lbficon = document.getElementById("lbfIcon");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 100) {
+        lbficon.className = "IconLbf showLbfIcon"
+    } else {
+        lbficon.className = "IconLbf hideLbfIcon"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+// End Show/hide LBF icon
+
+
+   // Initialize and add the map
+   function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -33.855508, lng: 18.625669 }; 
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 18,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeiU7m1_1SuM6QXtESzB-06IqBhf61jVk&callback=initMap&libraries=&v=weekly" async></script>
+
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Let's Be Friends</title>
+    <meta name="description" content="">
+	<meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="splide/splide.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/eca2hkj.css">
+
+    <!-- Favicon
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header-wrapper">
+        <div class="navigation">
+            <div class="logo">
+                <a id="lbflogo" href="#"><img class="logoLbf" src="images/lbf-text-logo-white.svg" alt="Let's Be Friends"></a>
+                <a id="lbfIcon" href="#"><img class="IconLbf" src="images/lbf-icon.svg" alt="Let's Be Friends"></a>
+            </div>
+            <ul id="myID" class="main-menu">
+                <li><a href="info.html">info</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+            <span id="burger" onclick="openNav()">
+                <label class="hamburger-icon">
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                </label>
+            </span>
+        </div>
+        <!-- <div class="hero-text">
+            <h1>because design matters</h1>
+        </div> -->
+		<div id="bm"></div>
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="images/header-1.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="images/header-2.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="images/header-3.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Overlay Menu-->
+    <div id="myNav" class="overlay">
+        <div class="overlay-head">
+            <div class="overlay-logo">
+                <a href="index.html"><img src="images/lbf-icon-white.svg" alt="Let's Be Friends"></a>
+            </div>
+            <div class="closebtn-container">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+            </div>
+        </div>
+        <div class="overlay-content">
+            <a href="info.html">info</a>
+            <a href="projects.html">projects</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="overlay-footer">
+            <div class="email-link">
+                <a href="mailto:philip@letsbefriends.co.za">philip@letsbefriends.co.za</a>
+            </div>
+            <div class="social-link">
+                <a href="#">instagram</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Intro Text -->
+    <div class="intro-wrapper">
+        <h2>We are a collaborative network of creative professionals working together to bring joy to our clients.</h2>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="porftolio-wrapper">
+        <div class="card option-1">
+            <div class="project-image">
+                <video autoplay muted loop
+                    src="video/sale-sc.mp4"
+                    poster=""
+                    width="620">
+                        Sorry, your browser doesn't support embedded videos,
+                        but don't worry, you can <a href="images/sale-sc-poster.jpg">download it</a>
+                        and watch it with your favorite video player!
+                </video>
+                <!-- <img src="images/project-1-web.jpg" alt="web"> -->
+            </div>
+            <div class="project-description">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum asperiores perferendis 
+                    similique blanditiis alias, expedita tenetur debitis reprehenderit a voluptatum quidem libero non 
+                    distinctio eum ut quasi tempore repudiandae.</p>
+            </div>
+        </div>
+
+        <div class="card option-3">
+            <div class="project-image">
+                <img src="images/project-3-web.jpg" alt="web">
+            </div>
+            <div class="project-description">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum asperiores perferendis 
+                similique blanditiis alias, expedita tenetur debitis reprehenderit a voluptatum quidem libero non 
+                distinctio eum ut quasi tempore repudiandae.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="option-2">
+                <div class="project-image">
+                    <img src="images/project-2-print.jpg" alt="web">
+                </div>
+                <div class="project-description">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum asperiores perferendis 
+                    similique blanditiis alias, expedita tenetur debitis reprehenderit a voluptatum quidem libero non 
+                    distinctio eum ut quasi tempore repudiandae.</p>
+                </div>
+            </div>
+            <div class="option-2">
+                <div class="project-image">
+                    <img src="images/test.jpg" alt="web">
+                </div>
+                <div class="project-description">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum asperiores perferendis 
+                    similique blanditiis alias, expedita tenetur debitis reprehenderit a voluptatum quidem libero non 
+                    distinctio eum ut quasi tempore repudiandae.</p>
+                </div>
+            </div>
+        </div>    
+
+        <div class="card">
+            <div class="option-2">
+                <div class="project-image">
+                    <img src="images/project-2-print.jpg" alt="web">
+                </div>
+                <div class="project-description">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum asperiores perferendis 
+                    similique blanditiis alias, expedita tenetur debitis reprehenderit a voluptatum quidem libero non 
+                    distinctio eum ut quasi tempore repudiandae.</p>
+                </div>
+            </div>
+            <div class="option-2">
+                <div class="project-image">
+                    <img src="images/project-2-print.jpg" alt="web">
+                </div>
+                <div class="project-description">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum asperiores perferendis 
+                    similique blanditiis alias, expedita tenetur debitis reprehenderit a voluptatum quidem libero non 
+                    distinctio eum ut quasi tempore repudiandae.</p>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- Info/contact Section -->
+    <div class="home-info-wrapper">
+        <div class="info-container">
+            <div class="info-header">
+                <h2>We are a multi-displinary source of creative expertise.</h2>
+            </div>
+            <div class="info-description">
+                <p>What started as a teenage dream has become an ever-evolving community of creative people. letsbefriends studio brings synergy to a diverse set of talents.</p>
+                <p>Our teams are kept streamlined and lightweight, enabling us to reduce unnecessary costs in tackling ambitious projects. our core values include a commitment to excellence in our work and health in the relationships we form along the way.</p>
+                <p>Whether you are an upcoming creative mind or an influential brand manager, we would live to connect with you. drop by our studio, or send us an email to get a conversation going.</p>
+            </div>
+        </div>
+        <div class="info-container-images">
+            <div class="info-image">
+                <img src="images/info-image-1.jpg" alt="">
+            </div>
+            <div class="info-image">
+                <img src="images/info-image-2.jpg" alt="">
+            </div>
+        </div>
+        <div class="info-email">
+            <p>Contact us via <a href="mailto:philip@letsbefriends.co.za">email</a>, or pop by our <a href="https://www.google.com/search?q=Letsbefriends+Studio&oq=Letsbefriends+Studio&aqs=chrome..69i57j69i60l3.248j0j4&sourceid=chrome&ie=UTF-8">studio</a>.
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer-wrapper home-bg">
+        <div class="copyright">
+            <p>&copy;<script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script>
+            Let's Be Friends. All Rights Reserved</p>
+        </div>
+        <div class="footer-container-social">
+            <a href="https://www.behance.net/letsbefriends"><img src="images/behance.svg" alt="Let's Be Friends Behance"></a>
+            <a href="https://instagram.com/lbf_studio"><img src="images/instagram.svg" alt="Let's Be Friends Instagram"></a>
+            <a href=" https://vimeo.com/letsbefriends"><img src="images/vimeo.svg" alt="Let's Be Friends Vimeo"></a>
+        </div>
+    </div>
+
+
+<!-- Custom script -->
+<script src="splide/splide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+
+<script>
+
+// Overlay Menu
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+
+// Header Navigation
+// Hide/show menu
+myID = document.getElementById("myID");
+//(y >= 600)
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (window.pageYOffset > window.innerHeight) {
+        myID.className = "main-menu hide"
+    } else {
+        myID.className = "main-menu show"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+// End Hide/show menu
+
+// Show/hide toggle menu
+burgerM = document.getElementById("burger");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (window.pageYOffset > window.innerHeight) {
+        burgerM.className = "main-menu showBurger"
+    } else {
+        burgerM.className = "main-menu hide"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+// End Show/hide toggle menu
+
+// Hide/show LBF logo
+lbfLogo = document.getElementById("lbflogo");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (window.pageYOffset > window.innerHeight) {
+        lbfLogo.className = "logoLbf hideLbfLogo"
+    } else {
+        lbfLogo.className = "logoLbf showLbfLogo"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+// End Hide/show LBF logo
+
+// Show/hide LBF icon
+lbficon = document.getElementById("lbfIcon");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (window.pageYOffset > window.innerHeight) {
+        lbficon.className = "IconLbf showLbfIcon"
+    } else {
+        lbficon.className = "IconLbf hideLbfIcon"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+// End Show/hide LBF icon
+
+// Header Carousel
+	document.addEventListener( 'DOMContentLoaded', function () {
+		new Splide( '.splide', {
+        type  : 'fade',
+        rewind: true,
+        autoplay: true,
+        } ).mount();
+	});
+
+// Portfolio
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("card");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var animation = bodymovin.loadAnimation({
+  // animationData: { /* ... */ },
+  container: document.getElementById('bm'), // required
+  path: 'because_design_matters.json', // required
+  renderer: 'svg', // required
+  loop: false, // optional
+  autoplay: true, // optional
+  name: "Demo Animation", // optional
+});
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Let's Be Friends - Info</title>
+    <meta name="description" content="">
+	<meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="splide/splide.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/eca2hkj.css">
+
+    <!-- Favicon
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- imagesLoaded // used for portfolio -->
+    <script src="js/imagesloaded.pkgd.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="info-page projects header-wrapper">
+        <div class="navigation">
+            <div class="logo">
+                <a id="lbflogo" href="index.html"><img class="logoLbf" src="images/lbf-text-logo-black.svg" alt="Let's Be Friends"></a>
+                <a id="lbfIcon" href="#"><img class="IconLbf" src="images/lbf-icon.svg" alt="Let's Be Friends"></a>
+            </div>
+            <ul id="myID" class="main-menu">
+                <li><a href="info.html">info</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+            <span id="burger" onclick="openNav()">
+                <label class="hamburger-icon">
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                </label>
+            </span>
+        </div>
+    </div>
+
+    
+    <!--Overlay Menu-->
+    <div id="myNav" class="overlay">
+        <div class="overlay-head">
+            <div class="overlay-logo">
+                <a href="index.html"><img src="images/lbf-icon-white.svg" alt="Let's Be Friends"></a>
+            </div>
+            <div class="closebtn-container">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+            </div>
+        </div>
+        <div class="overlay-content">
+            <a href="info.html">info</a>
+            <a href="projects.html">projects</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="overlay-footer">
+            <div class="email-link">
+                <a href="mailto:philip@letsbefriends.co.za">philip@letsbefriends.co.za</a>
+            </div>
+            <div class="social-link">
+                <a href="#">instagram</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Intro Section -->
+    <div class="info-section-wrapper">
+        <div class="info-section-container">
+            <div class="info-section-header">
+                <h2>Turning great ideas into unique experiences</h2>
+            </div>
+            <div class="info-section-description">
+                <p>Heydays is a design team tailored for ambitious companies in rapid growth or major change. We’re here for those who challenge conventions and push for better. Through brand strategy, identity development, and product design, we help our clients shape what’s next.</p>
+                <p>Advances in technology let us make more useful products. But it’s first when they connect with us emotionally they have the power to become loved digital experiences. Working with brands and products as one, we tear down the wall separating heart and mind.</p>
+                <p>Our team gets the importance of gaining momentum. Designed to travel light and move fast, we help our customers push forward. In other words, we know how to serve your early-stage needs and simultaneously build the foundation of a great brand.</p>
+                <p>A good fit? <a href="contact.html">Contact</a> us today.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Meet the family Section -->
+    <div class="team-section-wrapper">
+        <div class="team-section-container">
+            <div class="info-section-header">
+                <h2>Meet the team</h2>
+            </div>
+            <div class="team-wrapper">
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="images/team-member-1.jpg" alt="">
+                    </div>
+                    <div class="team-description">
+                        <p>Thomas Lein</p>
+                        <p>Brand Strategist, Co-founder</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="images/team-member-2.jpg" alt="">
+                    </div>
+                    <div class="team-description">
+                        <p>Julie Nord</p>
+                        <p>Senior Project Manager</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="images/team-member-1.jpg" alt="">
+                    </div>
+                    <div class="team-description">
+                        <p>Thomas Lein</p>
+                        <p>Brand Strategist, Co-founder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer-wrapper footer-black">
+        <div class="copyright">
+            <p>&copy;<script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script>
+            Let's Be Friends. All Rights Reserved</p>
+        </div>
+        <div class="footer-container-social info-social">
+            <a href="https://www.behance.net/letsbefriends"><img src="images/behance.svg" alt="Let's Be Friends Behance"></a>
+            <a href="https://instagram.com/lbf_studio"><img src="images/instagram.svg" alt="Let's Be Friends Instagram"></a>
+            <a href=" https://vimeo.com/letsbefriends"><img src="images/vimeo.svg" alt="Let's Be Friends Vimeo"></a>
+        </div>
+    </div>
+
+<!-- Custom script -->
+<script src="splide/splide.min.js"></script>
+
+<script>
+
+// Overlay Menu
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+
+// Header Navigation
+// Hide/show menu
+myID = document.getElementById("myID");
+//(y >= 600)
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 100) {
+        myID.className = "main-menu hide"
+    } else {
+        myID.className = "main-menu show"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+// End Hide/show menu
+
+// Show/hide toggle menu
+burgerM = document.getElementById("burger");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 100) {
+        burgerM.className = "main-menu showBurger"
+    } else {
+        burgerM.className = "main-menu hide"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+// End Show/hide toggle menu
+
+// Hide/show LBF logo
+lbfLogo = document.getElementById("lbflogo");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 100) {
+        lbfLogo.className = "logoLbf hideLbfLogo"
+    } else {
+        lbfLogo.className = "logoLbf showLbfLogo"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+// End Hide/show LBF logo
+
+// Show/hide LBF icon
+lbficon = document.getElementById("lbfIcon");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 100) {
+        lbficon.className = "IconLbf showLbfIcon"
+    } else {
+        lbficon.className = "IconLbf hideLbfIcon"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+// End Show/hide LBF icon
+
+</script>
+
+</body>
+</html>

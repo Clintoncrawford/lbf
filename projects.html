@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Let's Be Friends - Projects</title>
+    <meta name="description" content="">
+	<meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="splide/splide.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/eca2hkj.css">
+
+    <!-- Favicon
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- imagesLoaded // used for portfolio -->
+    <script src="js/imagesloaded.pkgd.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Tobii Lightbox -->
+    <link href="lightbox/tobii.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="projects header-wrapper">
+        <div class="navigation">
+            <div class="logo">
+                <a id="lbflogo" href="index.html"><img class="logoLbf" src="images/lbf-text-logo-black.svg" alt="Let's Be Friends"></a>
+                <a id="lbfIcon" href="#"><img class="IconLbf" src="images/lbf-icon.svg" alt="Let's Be Friends"></a>
+            </div>
+            <ul id="myID" class="main-menu">
+                <li><a href="info.html">info</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+            <span id="burger" onclick="openNav()">
+                <label class="hamburger-icon">
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                </label>
+            </span>
+        </div>
+    </div>
+
+    
+    <!--Overlay Menu-->
+    <div id="myNav" class="overlay">
+        <div class="overlay-head">
+            <div class="overlay-logo">
+                <a href="index.html"><img src="images/lbf-icon-white.svg" alt="Let's Be Friends"></a>
+            </div>
+            <div class="closebtn-container">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+            </div>
+        </div>
+        <div class="overlay-content">
+            <a href="info.html">info</a>
+            <a href="projects.html">projects</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="overlay-footer">
+            <div class="email-link">
+                <a href="mailto:philip@letsbefriends.co.za">philip@letsbefriends.co.za</a>
+            </div>
+            <div class="social-link">
+                <a href="#">instagram</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Intro Text -->
+    <div class="intro-wrapper">
+        <h2>We are a collaborative network of creative professionals working together to bring joy to our clients.</h2>
+    </div>
+
+    <!-- Portfolio Gallery -->
+    <div id="project" class="projects-wrapper">
+        <div id="filterNavContainer">
+            <button class="filterBtn active" onclick="filterSelection('all')">all</button>
+            <button class="filterBtn" onclick="filterSelection('branding')">branding</button>
+            <button class="filterBtn" onclick="filterSelection('ui')">ui/ux</button>
+            <button class="filterBtn" onclick="filterSelection('animation')">animation</button>
+        </div>
+
+        <div class="grid">
+            <div class="item branding">
+                <div class="content">
+                    <div class="project-porfolio-image">
+                        <a href="#selector1" data-type="html" class="lightbox"><img src="images/project-1-web.jpg" alt="branding"></a>
+                    </div>
+                    <div class="project-portfolio-description">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum asperiores perferendis 
+                            similique blanditiis alias, expedita tenetur debitis reprehenderit a voluptatum quidem libero non 
+                            distinctio eum ut quasi tempore repudiandae.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item ui">
+                <div class="content">
+                    <div class="project-porfolio-image">
+                        <a href="#selector2" data-type="html" class="lightbox"><img src="images/project-2-print.jpg" alt="UI"></a>
+                    </div>
+                    <div class="project-portfolio-description">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum asperiores perferendis 
+                            similique blanditiis alias, expedita tenetur debitis reprehenderit a voluptatum quidem libero non 
+                            distinctio eum ut quasi tempore repudiandae.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item animation">
+                <div class="content">
+                    <div class="project-porfolio-image">
+                        <a href="#selector3" data-type="html" class="lightbox"><img src="images/project-2-print.jpg" alt="animation"></a>
+                    </div>
+                    <div class="project-portfolio-description">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum asperiores perferendis 
+                            similique blanditiis alias, expedita tenetur debitis reprehenderit a voluptatum quidem libero non 
+                            distinctio eum ut quasi tempore repudiandae.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item branding">
+                <div class="content">
+                    <div class="project-porfolio-image">
+                        <a href="#selector4" data-type="html" class="lightbox"><img src="images/project-1-web.jpg" alt="branding"></a>
+                    </div>
+                    <div class="project-portfolio-description">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum asperiores perferendis 
+                            similique blanditiis alias, expedita tenetur debitis reprehenderit a voluptatum quidem libero non 
+                            distinctio eum ut quasi tempore repudiandae.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item branding">
+                <div class="content">
+                    <div class="project-porfolio-image">
+                        <img src="images/project-1-web.jpg" alt="branding">
+                    </div>
+                    <div class="project-portfolio-description">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum asperiores perferendis 
+                            similique blanditiis alias, expedita tenetur debitis reprehenderit a voluptatum quidem libero non 
+                            distinctio eum ut quasi tempore repudiandae.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item ui">
+                <div class="content">
+                    <div class="project-porfolio-image">
+                        <img src="images/project-1-web.jpg" alt="Ui">
+                    </div>
+                    <div class="project-portfolio-description">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum asperiores perferendis 
+                            similique blanditiis alias, expedita tenetur debitis reprehenderit a voluptatum quidem libero non 
+                            distinctio eum ut quasi tempore repudiandae.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item animation">
+                <div class="content">
+                    <div class="project-porfolio-image">
+                        <img src="images/project-2-print.jpg" alt="Animation">
+                    </div>
+                    <div class="project-portfolio-description">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum asperiores perferendis 
+                            similique blanditiis alias, expedita tenetur debitis reprehenderit a voluptatum quidem libero non 
+                            distinctio eum ut quasi tempore repudiandae.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item animation">
+                <div class="content">
+                    <div class="project-porfolio-image">
+                        <img src="images/test.jpg" alt="Animation">
+                    </div>
+                    <div class="project-portfolio-description">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum asperiores perferendis 
+                            similique blanditiis alias, expedita tenetur debitis reprehenderit a voluptatum quidem libero non 
+                            distinctio eum ut quasi tempore repudiandae.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div id="selector1" class="lightbox-project">
+        <div class="lightbox-project-heading">
+            <h1>Project 1 - Nike</h1>
+        </div>
+        <div class="one-block">
+            <img src="images/project-1-web.jpg" alt="branding">
+        </div>
+        <div class="two-block">
+            <div>
+                <img src="images/project-2-print.jpg" alt="UI">
+            </div>
+            <div>
+                <img src="images/project-2-print.jpg" alt="UI">
+            </div>
+        </div>
+    </div>
+
+    <div id="selector2" class="lightbox-project">
+        <div class="lightbox-project-heading">
+            <h1>Project 2 - Sportscene</h1>
+        </div>
+        <div class="two-block">
+            <div>
+                <img src="images/project-2-print.jpg" alt="UI">
+            </div>
+            <div>
+                <img src="images/project-2-print.jpg" alt="UI">
+            </div>
+        </div>
+        <div class="one-block">
+            <img src="images/project-1-web.jpg" alt="branding">
+        </div>
+        <div class="two-block"> <!--Two columns with text and image -->
+            <div class="lightbox-text">
+                <h2>Intro text</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum asperiores perferendis 
+                    similique blanditiis alias, expedita tenetur debitis reprehenderit a voluptatum quidem libero non 
+                    distinctio eum ut quasi tempore repudiandae.</p>
+            </div>
+            <div>
+                <img src="images/project-2-print.jpg" alt="UI">
+            </div>
+        </div>
+    </div>
+
+    <div id="selector3" class="lightbox-project">
+        <div class="lightbox-project-heading">
+            <h1>Project 3 - Redbat</h1>
+        </div>
+        <div class="one-block">
+            <img src="images/project-1-web.jpg" alt="branding">
+        </div>
+        <div class="two-block">
+            <div>
+                <img src="images/project-2-print.jpg" alt="UI">
+            </div>
+            <div>
+                <img src="images/project-2-print.jpg" alt="UI">
+            </div>
+        </div>
+        <div class="two-block"> <!--Two columns with text -->
+            <div class="one-block">
+                <img src="images/project-1-web.jpg" alt="branding">
+            </div>
+            <div class="lightbox-text">
+                <h2>Intro text</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum asperiores perferendis 
+                    similique blanditiis alias, expedita tenetur debitis reprehenderit a voluptatum quidem libero non 
+                    distinctio eum ut quasi tempore repudiandae.</p>
+            </div>
+        </div>
+
+        <div id="selector4" class="lightbox-project">
+            <div class="one-block">
+                <video controls loop preload="metadata" poster="images/sale-sc-poster.jpg">
+                    <source src="video/sale-sc.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="two-block"> <!--Two columns with text -->
+                <div class="one-block">
+                    <img src="images/project-1-web.jpg" alt="branding">
+                </div>
+                <div class="lightbox-text">
+                    <h2>Intro text</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum asperiores perferendis 
+                        similique blanditiis alias, expedita tenetur debitis reprehenderit a voluptatum quidem libero non 
+                        distinctio eum ut quasi tempore repudiandae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer-wrapper footer-contact">
+        <div class="copyright">
+            <p>&copy;<script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script>
+            Let's Be Friends. All Rights Reserved</p>
+        </div>
+        <div class="footer-container-social info-social">
+            <a href="https://www.behance.net/letsbefriends"><img src="images/behance.svg" alt="Let's Be Friends Behance"></a>
+            <a href="https://instagram.com/lbf_studio"><img src="images/instagram.svg" alt="Let's Be Friends Instagram"></a>
+            <a href=" https://vimeo.com/letsbefriends"><img src="images/vimeo.svg" alt="Let's Be Friends Vimeo"></a>
+        </div>
+    </div>
+
+<!-- Custom script -->
+<script src="splide/splide.min.js"></script>
+<script src="lightbox/tobii.min.js"></script>
+
+<script>
+
+// Overlay Menu
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+
+// Header Navigation
+// Hide/show menu
+myID = document.getElementById("myID");
+//(y >= 600)
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 100) {
+        myID.className = "main-menu hide"
+    } else {
+        myID.className = "main-menu show"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+// End Hide/show menu
+
+// Show/hide toggle menu
+burgerM = document.getElementById("burger");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 100) {
+        burgerM.className = "main-menu showBurger"
+    } else {
+        burgerM.className = "main-menu hide"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+// End Show/hide toggle menu
+
+// Hide/show LBF logo
+lbfLogo = document.getElementById("lbflogo");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 100) {
+        lbfLogo.className = "logoLbf hideLbfLogo"
+    } else {
+        lbfLogo.className = "logoLbf showLbfLogo"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+// End Hide/show LBF logo
+
+// Show/hide LBF icon
+lbficon = document.getElementById("lbfIcon");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 100) {
+        lbficon.className = "IconLbf showLbfIcon"
+    } else {
+        lbficon.className = "IconLbf hideLbfIcon"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+// End Show/hide LBF icon
+
+// Projects Portfolio
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("item");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show-element");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show-element");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button
+var filterBtnContainer = document.getElementById("filterNavContainer");
+var filterBtns = filterBtnContainer.getElementsByClassName("filterBtn");
+for (var i = 0; i < filterBtns.length; i++) {
+  filterBtns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+
+function resizeGridItem(item){
+  grid = document.getElementsByClassName("grid")[0];
+  rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+  rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+  rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+    item.style.gridRowEnd = "span "+rowSpan;
+}
+
+function resizeAllGridItems(){
+  allItems = document.getElementsByClassName("item");
+  for(x=0;x<allItems.length;x++){
+    resizeGridItem(allItems[x]);
+  }
+}
+
+function resizeInstance(instance){
+  item = instance.elements[0];
+  resizeGridItem(item);
+}
+
+window.onload = resizeAllGridItems();
+window.addEventListener("resize", resizeAllGridItems);
+
+allItems = document.getElementsByClassName("item");
+for(x=0;x<allItems.length;x++){
+  imagesLoaded( allItems[x], resizeInstance);
+}
+
+// Modal
+const tobii = new Tobii({
+  swipeClose: false,
+  counter: false,
+  zoom: false,
+  draggable: false
+})
+
+</script>
+
+</body>
+</html>
